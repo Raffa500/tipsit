@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .box{
+          height:200px;
+          width:200px;
+          margin:5px;
+          display:inline;
+          position:relative;
+          background-color: blue;
+          
+      }
+  </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  
+  <body>
+    <h2>Creare bottone stilizzato che prende il tempo e modifica sfondo di un bottone</h2>
+
+    <p id="demo">
+     Pemi il bottone mer cambiare colore
+    </p>
+    <p id="out">........0.0</p>
+    <button type="button" onclick="count()">Invia</button>
+    <script>
+      let i = 0;
+      let start = Date.now();
+      function count() {
+        document.getElementById("out").innerHTML =
+          "Done in " + (Date.now() - start) + " ms";
+          document.getElementById("box").style.backgroundColor="red";
+      }
+    </script>
+    <div class="box" id="box">
+        cambio colore
+    </div>
+  </body>
+</html>
