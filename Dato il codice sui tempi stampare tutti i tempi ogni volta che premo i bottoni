@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Dato il codice sui tempi stampare tutti i tempi ogni volta che premo i bottoni</h2>
+
+    <p id="demo">
+      Questa pagina segna il tempo ogni volta che premi il bottone
+    </p>
+    <p id="out">........0.0</p>
+    <button type="button" onclick="count()">Invia</button>
+    <script>
+      let i = 0;
+      let start = Date.now();
+      function count() {
+        document.getElementById("out").innerHTML += "Done in " + (Date.now() - start) + " ms <br>";
+
+      }
+      
+    </script>
+    
+  </body>
+</html>
