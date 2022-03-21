@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{background-color:#BCBCBC;
+
+
+}
+.miaScatola{
+ 
+width:200px;
+height:200px;
+margin:5px;
+padding:5px;
+border:1px solid black;
+
+
+}
+#centrato
+{ text-align:center;
+  color:Blue;
+  font-family:arial;
+  margin:0px;
+}
+li {font-size:13px}
+
+
+</style>
+</head>
+
+
+
+
+
+
+<body>
+<h1>Sistemi Operativi  </h1> 
+<button type="button" onclick="alert('Hello World!')">Introduzione ai sistemi operativi con Javascript</button>
+
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+
+<p id="demo"></p>
+
+
+
+
+<div class="miaScatola">
+<!--inserisco un elenco puntato dei dispositivi di input   -->
+        <p id="centrato"> Dispositivi di input</p>
+<ul>
+  <li>Keyboard</li>
+  <li>Mouse</li>
+  <li>Microphone</li>
+  <li>Touch Screen</li>
+  <li>Graphic Board</li>
+  <li>USB port</li>
+  <li>WebCam</li>
+  
+</ul>  
+
+
+</div>
+
+<div class="miaScatola">
+<!--inserisco un elenco puntato dei dispositivi di input   -->
+        <p id="centrato"> Dispositivi di output</p>
+<ul>
+  <li>Monitor</li>
+  <li>Casse</li>
+  <li>Cuffie</li>
+  <li>Proiettore</li>
+  
+</ul>  
+
+
+</div>
+
+
+
+</body>
+</html>
