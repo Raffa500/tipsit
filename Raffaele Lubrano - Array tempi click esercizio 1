@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  div1 {
+ background-color: red;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+div2 {
+ background-color: green;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+ </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="tempo()">metto tempi nell'array</button>
+<p id="out"></p>
+<script>
+ let mioarraytempi = [];
+
+let tempoiniziale = Date.now();
+
+function tempo() {
+    let tempodalclick = Date.now() - tempoiniziale;
+    mioarraytempi.push(tempodalclick);
+    stampaArray();
+}
+function stampaArray() {
+    document.getElementById("out").innerHTML += mioarraytempi.toString();
+    if (mioarraytempi[0] <= 2000) {
+        document.getElementById("div1").style.backgroundColor = "red";
+    } else {
+        document.getElementById("div2").style.backgroundColor = "green";
+    }
+}
+
+    </script>
+  
+
+
+
+
+</body>
+</html>
