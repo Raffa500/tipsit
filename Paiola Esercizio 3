@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blu</title>
+    <style>
+      .blu {
+        background-color: "rgb(0,0,0)";
+        border-color: black;
+        border: 5px solid;
+        float: left;
+        width: 98px;
+        height: 98px;
+      }
+    </style>
+    <script>
+      function cambiaColore() {
+        let a = document.getElementsByName("A");
+        let aColori = [];
+        for (let i = 0; i < a.length; i++) {
+          aColori[i] = 0;
+        }
+        setInterval(() => {
+          let randomquadrato = 0;
+          do {
+            randomquadrato = parseInt(Math.random() * a.length);
+          } while (aColori[randomquadrato] >= 1);
+          aColori[randomquadrato] += 0.01;
+          a[randomquadrato].style.backgroundColor =
+            "rgba(0,0,255," + aColori[randomquadrato] + ")";
+          if (aColori[randomquadrato] >= 1) {
+            a[randomquadrato].style.backgroundColor = "rgb(255,255,255)";
+            a[randomquadrato].style.borderColor = "rgb(255,255,255)";
+          }
+        }, 1);
+      }
+    </script>
+  </head>
+
+  <body onload="cambiaColore()">
+    <div name="A" class="blu"></div>
+    <div name="A" class="blu"></div>
+    <div name="A" class="blu"></div>
+    <div name="A" class="blu"></div>
+    <div name="A" class="blu"></div>
+    <div name="A" class="blu"></div>
+    
+  </body>
+</html>
