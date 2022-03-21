@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;
+<style>
+/*css*/
+div{
+ margin:2px;
+ padding:2px;
+ width: 200px;
+ height: 200px;
+position:relative;
+display: flex;
+float: left;
+}
+.rosso{
+    background-color: crimson;
+}
+.giallo{
+    background-color: rgb(227, 252, 8);
+}
+.blue{
+    background-color: darkblue;
+}
+.verde{
+    background-color:darkgreen;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="box1" class="rosso">
+
+    <button  onclick="cambiacolore()"   class="w3-button w3-black w3-round-large">Change color</button>
+
+</div>
+<div id="box2" class="verde"></div>
+<div id="box3" class="blue"></div>
+<div id="box4" class="giallo"></div>
+
+
+<script>
+    //javascript
+function cambiacolore() {
+    document.getElementById("box2")
+}
+
+
+</script>    
+
+   
+
+</body>
+</html>
