@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lancio di un dado 1000 volte</title>
+</head>
+<body>
+   
+    <p id="output"></p>
+
+<script>
+ let dado=0;
+ let tmp="";
+ let conta6=0;
+ for(let i=1;i<1001;i++)
+ {
+ dado=Math.round((Math.random()*5)+1);
+ if (dado==6)
+{
+    conta6++;
+    document.write("*"+dado+ "* ");
+}
+ else
+ {
+     document.write(dado+ " ");
+ }
+ 
+ if (i%100==0)
+ {
+ document.write("<br>");
+ }
+}
+document.write(conta6);
+
+</script>
+
+
+</body>
+</html>
