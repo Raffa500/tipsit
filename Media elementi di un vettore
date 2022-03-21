@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Media elementi di un vettore.</title>
+    
+  </head>
+
+  <body>
+    
+    <p id="vettore"></p>
+    <p id="media"></p>
+    <div id="vett"></div>
+    <div id="med"></div>
+    <button class="myButton"onClick="vettore1()">
+      N casuali
+    </button>
+    <button class="myButton"onClick="media1()">
+      Media
+    </button>
+
+    <style>
+      <a href="#" class="myButton">vettore</a>
+
+.myButton {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color:#ffec64;
+    border-radius:11px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:14px 39px;
+    text-decoration:none;
+    text-shadow:0px 0px 0px #ffee66;
+}
+.myButton:hover {
+    background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color:#ffab23;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+    </style>
+    
+    <script>
+      let vettore = [ ];
+      let media;
+      let i;
+
+       function vettore1(){
+         for (i=0; i<50; i++){
+         Math.round((Math.random() * 50) + 1);
+         vettore[i]=(Math.round((Math.random() * 50) + 1));
+           document.getElementById("vettore").innerHTML+=vettore[i]+",";
+         }
+       }
+
+      function media1(){
+
+        let somma=0;
+        
+        for(i=0; i<50; i++){
+          somma+=vettore[i]
+        }
+        media=somma/50;
+        document.getElementById("media").innerHTML=media;
+      }
+      
+    </script>
+  </body>
+</html>
