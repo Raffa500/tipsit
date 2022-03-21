@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ 
+div1 {
+ background-color: green;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+div2 {
+ background-color: blue;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+div3 {
+ background-color: red;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+div4 {
+ background-color: gray;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+div5 {
+ background-color: purple;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+div6 {
+ background-color: lightgray;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+div7 {
+ background-color: lightblue;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+div8 {
+ background-color: magenta;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+div9 {
+ background-color: yellow;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+div10 {
+ background-color: lightgreen;
+ width: 20px;
+ height: 20px;
+ padding: 20px;
+ margin: 2px;
+ }
+ 
+.miaScatola{
+background-color: gray;
+width:200px;
+height:220px;
+margin:5px;
+padding:5px;
+border:1px solid black;
+ 
+ 
+</style>
+</head>
+<body>
+ 
+<h2></h2>
+ 
+<p>Tabellina del 9</p>
+<br>
+ 
+ 
+ 
+<div1>9</div1>
+<div2>18</div2>
+<div3>27</div3>
+<div4>36</div4>
+<div5>45</div5>
+<div6>54</div6>
+<div7>63</div7>
+<div8>72</div8>
+<div9>81</div9>
+<div10>90</div10>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
+ <div class="miaScatola">
+<ul>
+ <li><a href="http://www.marcopalladino.it/it/cosa-puo-fare-lintelligenza-artificiale-quali-lavori-sono-realmente-a-rischio/" target="_blank">Intelligenza artificiale</a>
+</ul> 
+<ul>
+ <li><a href="http://www.marcopalladino.it/it/game-design-or-lesson-design-the-flow/" target="_blank">Game design</a>
+</ul> 
+<ul>
+ <li><a href="http://www.marcopalladino.it/it/giochi-con-la-fisica/" target="_blank">Giochi con la fisica!</a>
+</ul> 
+<ul>
+ <li><a href="http://www.marcopalladino.it/it/artificial-intelligences-examples/" target="_blank">Artificial Intelligence’s examples</a>
+</ul> 
+<ul>
+ <li><a href="http://www.marcopalladino.it/it/numeri-primi-da-1-a-100-in-scratch/" target="_blank">Numeri primi da 1 a 100 con Scratch</a>
+</ul> 
+ 
+ 
+ 
+ 
+ 
+</body>
+</html>
