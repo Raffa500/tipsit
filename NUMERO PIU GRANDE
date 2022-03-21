@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<div class="casellaTesto">
+ <h1>Numero più grande</h1>
+ <form id="frm1" >
+   N1: <input type="text" name="Hbase" value="0"><br>
+   N2: <input type="text" name="HArrivo" value="0"><br>
+   N3: <input type="text" name="HBase1" value="0"><br><br>
+  <!-- <input type="submit" value="Input dati Trekking">-->
+  </form>
+            
+  <p>Numero più grande:</p>
+  <button onclick="myFunction()">Calcola</button>         
+  <p>N1:</p>
+  <p id="base"></p><br>
+  <p>N2:</p>
+  <p id="arrivo"></p><br>
+  <p>N3:</p>
+  <p id="base1"></p>
+  <hr>
+  
+   Il numero maggiore è:
+  <p id="demo1"></p>
+    </div>
+    <div id="barraSotto">
+    </div>
+
+<script>
+    function myFunction() {
+
+    var x = document.getElementById("frm1");
+
+    var base = x.elements[0].value;
+    document.getElementById("base").innerHTML = base;
+  
+    var arrivo = x.elements[1].value;
+    document.getElementById("arrivo").innerHTML = arrivo;
+
+    var base1 = x.elements[2].value;
+    document.getElementById("base1").innerHTML = base1;
+
+    
+    document.getElementById("demo1").innerHTML = Maggiore1(base, arrivo, base1);
+}
+
+function Dislivello(h1, h2, h3) {
+  return h1 * h2 * h3;
+}
+
+function Maggiore1(h1,h2,h3) {
+    var max = -10000000000000;
+    if(h1 > max){
+        max = h1;
+    }
+
+    if(h2 > max){
+        max = h2;
+    }
+
+    if(h3 > max){
+        max = h3;
+    }
+    return max;
+}
+
+</script>
+
+</body>
+</html>
