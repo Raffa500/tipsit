@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Raffaele Lubrano</title>
+  </head>
+  <style>
+ body {
+  background-image: url('rm218-bb-5_1_1.jpg');
+  background-size: cover;
+ }
+ </style>
+ <h1 align="center"><p style="color:red;">Raffaele Lubrano</h1></p>
+  <body>
+  <hr>
+  <h1 align="center">
+  Ho 16 anni e vengo da Torino<br> 
+  Sono nato il 10 maggio 2005<br>
+  Mi piace giocare ai videogiochi soprattutto ai generi esplorativi e di ruolo<br>
+  In passato ho praticato il karate<br>
+  Attualmente non pratico sport<br>
+  Frequento la 3° superiore informatica dell'istituto tecnico JC Maxwell di Nichelino<hr>
+  </h1>
+  <p align="center"><a href="url">https://www.youtube.com</a></p>
+  <p align="center"><a href="url">https://www.w3schools.com/</a></p>
+  </body>
+</html>
