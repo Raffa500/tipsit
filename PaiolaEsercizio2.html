@@ -1,7 +1,43 @@
-<html>
-  <head>
-    <style>
-      #giallo{
+<SCRIPT Language='JavaScript'>
+    function inizia() {
+        var b = document.getElementById('B');
+        var a = document.getElementById('A');
+        var xprec;
+        var yprec;
+        setInterval(function() {
+            y = parseInt(Math.random() * 200);
+            b.style.left = y;
+            x = parseInt(Math.random() * 200);
+            b.style.top = x;
+
+            xprec = x;
+            yprec = y;
+
+            y = parseInt(Math.random() * 200);
+            a.style.left = y;
+            x = parseInt(Math.random() * 200);
+            a.style.top = x;
+            if (xprec - x > 100 || x - xprec > 100 || yprec - y > 100 || y - yprec > 100) {
+
+                b.style.backgroundColor = 'blue';
+                a.style.backgroundColor = 'yellow';
+            } else {
+                b.style.backgroundColor = 'red';
+                a.style.backgroundColor = 'red';
+            }
+        }, 1000);
+    }
+</SCRIPT>
+
+
+<HTML>
+
+<HEAD>
+    <TITLE>Casuale Sovrapposizione</TITLE>
+</HEAD>
+
+<style type="text/css">
+    #A {
         left: 210px;
         top: 50px;
         background-color: yellow;
@@ -15,7 +51,7 @@
         border: solid black;
     }
 
-      #blu{
+    #B {
         left: 210px;
         top: 50px;
         background-color: blue;
@@ -28,42 +64,14 @@
         border-width: 1px;
         border: solid black;
     }
-    </style>
-  </head>
-  <body onload="inizia()">
+</style>
 
-    <div id="giallo"></div>
-    <div id="blu"></div>
 
-   <script>
-    function inizia() {
-        var b = document.getElementById('giallo');
-        var a = document.getElementById('blu');
-        var xprec;
-        var yprec;
-        setInterval(function() {
-            y = parseInt(Math.random() * 200);
-            giallo.style.left = y;
-            x = parseInt(Math.random() * 200);
-            giallo.style.top = x;
+<BODY onload="inizia()">
 
-            xprec = x;
-            yprec = y;
+    <DIV id='B'></DIV>
+    <DIV id='A'></DIV>
 
-            y = parseInt(Math.random() * 200);
-            blu.style.left = y;
-            x = parseInt(Math.random() * 200);
-            blu.style.top = x;
-            if (xprec - x > 100  x - xprec > 100  yprec - y > 100 || y - yprec > 100) {
-                giallo.style.backgroundColor = 'yellow';
-                blu.style.backgroundColor = 'blue';
-            } else {
-                giallo.style.backgroundColor = 'red';
-                blu.style.backgroundColor = 'red';
-            }
-        }, 1000);
-    }
-</script>
+</BODY>
 
-  </body>
-</html>
+</HTML>
