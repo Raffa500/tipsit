@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<button id ="mio bottone"onclick="generaprimi()">Genera i numeri primi da 1 a 100</button>
+  
+  
+
+
+  
+  <script>
+    function isprime(N) {
+      let primo=true;
+      for(let fattore=2;fattore<=(N/2)&&primo;fattore++){
+        if(N%fattore==0){
+          primo=false;
+        }
+      }
+     return primo;
+    }
+
+    function generaprimi() {
+      let cont=0;
+      for(let i=0;i<101;i++){
+        if(isprime(i)){
+          document.write("<spam>"+i+"</spam>");
+          cont++;
+        }else{
+          document.write("<spam>( "+i+" )</spam>");
+        }
+      }
+      
+        document.write("<spam> Quanti primi:"+cont+" </spam>");
+    }
+  </script>
+</body>
+
+</html>
