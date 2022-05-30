@@ -1,0 +1,79 @@
+html
+Dato un array di numeri primi (100 elementi) dato in input un numero </p>
+    <p>1) dire se questo è presente nell'array altrimenti stampare NON TROVATO</p>
+    <p>2) se presente stampare il numero primo successivo e precedente</p>
+    <p>3) stampare il prodotto del numero cercato con il numero primo successivo</p>
+    <p>4) stampare il risultato della divisione del numero cercato con il numero precedente</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p>Dato un array di numeri primi (100 elementi) dato in input un numero </p>
+    <p>1) dire se questo è presente nell'array altrimenti stampare NON TROVATO</p>
+    <p>2) se presente stampare il numero primo successivo e precedente</p>
+    <p>3) stampare il prodotto del numero cercato con il numero primo successivo</p>
+    <p>4) stampare il risultato della divisione del numero cercato con il numero precedente</p>
+
+
+    <br>
+    <label for="input">Inserisci il numero da cercare</label>
+    <input id="input" type="text">
+    <br>
+    <button onclick="eseguiRicerca();">Cerca il numero nell'array</button>
+
+    <script>
+            let arrayPrimi = [];
+            for(let i=1;i<=100;i++)
+            {  
+              if (isPrime(i))
+                {
+                  document.write(i+ " ");
+                  arrayPrimi.push(i);
+                }
+            }
+
+   function eseguiRicerca()
+    {
+        let n=0;
+        n=parseInt(document.getElementById("input").value);
+        let i=0;
+        let trov=false;
+        while (i<=100 && !trov) {
+          if (n == arrayPrimi[i]) {
+            trov = true;
+          }
+          i++;
+        }   
+        if (trov) {
+          document.write(arrayPrimi[i-1] + " " + arrayPrimi[i] + " " + arrayPrimi[i+1]);
+          document.write(" Prodotto: " + arrayPrimi[i]*arrayPrimi[i+1])
+          document.write(" Divisione: " + arrayPrimi[i]/arrayPrimi[i-1])
+        }
+        else {
+          document.write("non trovato");
+        }
+   }
+
+    function isPrime(n) {
+    // da true se n è primo cioè se n non ha fattori escluso 1 e n
+    // da false se n non è primo cioè ha un numero di fattori > 2
+    //ipotesi assurda cioè ipotizzo che tutti i numeri n siano primi
+    let primo=true;
+        for(let fattore=2;((fattore<=n/2)&&primo);fattore++)
+        {
+            if (n%fattore==0)
+            {
+                primo=false;
+            }
+        }
+    return primo;
+}
+    </script>
+</body>
+</html>
